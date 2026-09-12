@@ -1,0 +1,14 @@
+{
+	"id": "hyprSubmap",
+	"name": "Hyprland Submap Indicator",
+	"description": "Indicador visual de la capa (submap) activa en Hyprland.",
+	"version": "1.0.0",
+	"author": "Santos",
+	"type": "widget",
+	"capabilities": [
+		"dankbar-widget"
+	],
+	"component": "./SubmapWidget.qml",
+	"icon": "keyboard",
+	"requires_dms": ">=0.1.0"
+}
