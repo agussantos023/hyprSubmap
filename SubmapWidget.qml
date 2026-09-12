@@ -38,6 +38,11 @@ PluginComponent {
         return submap.substring(0, 3).toUpperCase()
     }
 
+		// Helper para determinar si está en estado normal
+    function isNormalState(submap) {
+        return !submap || submap === "reset" || submap === ""
+    }
+
     // Píldora visible en la barra horizontal
     horizontalBarPill: Component {
         Item {
@@ -48,7 +53,7 @@ PluginComponent {
                 id: labelText
                 anchors.centerIn: parent
                 text: root.getDisplayLabel(root.currentSubmap)
-                color: Theme.primary // Color acentuado de tu tema actual
+								color: root.isNormalState(root.currentSubmap) ? Theme.surfaceText : Theme.primary
                 font.bold: true
                 font.pixelSize: Theme.fontSizeSmall
             }
@@ -65,7 +70,7 @@ PluginComponent {
                 id: labelTextVert
                 anchors.centerIn: parent
                 text: root.getDisplayLabel(root.currentSubmap)
-                color: Theme.primary
+								color: root.isNormalState(root.currentSubmap) ? Theme.surfaceText : Theme.primary
                 font.bold: true
                 font.pixelSize: Theme.fontSizeSmall
             }
