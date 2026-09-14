@@ -1,6 +1,6 @@
 {
 	"id": "hyprSubmap",
-	"name": "Hyprland Submap Indicator",
+	"name": "Hyprland Submap Bar",
 	"description": "Indicador visual ligero en tiempo real del submap activo en Hyprland.",
 	"version": "1.0.0",
 	"author": "Santos",
